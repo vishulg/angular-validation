@@ -1,0 +1,556 @@
+.headBackground{
+    background-image: url("/assets/backgrounds/Rectangle11.png");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: round;
+}
+
+.trendBackground{
+    background-image: url("/assets/backgrounds/4683.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: round;
+    position: relative;
+    height: 550px;
+
+}
+
+.contactUsBackground{
+    background-image: url("/assets/backgrounds/Rectangle13.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 200px !important;
+}
+
+.header{
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 20px 0 0 !important;
+}
+
+.nav>li{
+    cursor: pointer;
+}
+
+.nav>li>a{
+    color:#ccc;
+}
+
+.nav>li>a.active{
+    color:#70b5ea;
+    position: relative;
+}
+
+.nav>li:hover>a{
+    color:#70b5ea;
+    position: relative;
+}
+
+.nav>li:hover>a::before{
+    content: "";
+    position: absolute;
+    width: 33%;
+    height: 1px;
+    bottom: 20%;
+    left: 17px;
+    border-bottom: 1px solid;
+
+}
+
+.nav>li>a.active:before{
+    content: "";
+    position: absolute;
+    width: 33%;
+    height: 1px;
+    bottom: 20%;
+    left: 17px;
+    border-bottom: 1px solid;
+}
+
+.row{
+    margin: 0;
+}
+
+div{
+    padding: 0;
+}
+
+.lorem{
+    font-size: 87px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 0;
+    padding-left: 50px;
+}
+
+.ipsum{
+    font-size: 120px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0;
+    padding-left: 50px;
+}
+
+.bigB{
+    width: 120px;
+    position: absolute;
+    bottom: -10px;
+    left: 48px;
+}
+
+.smallB{
+    width: 90px;
+    position: absolute;
+    bottom: 8px;
+    left: 140px;
+}
+
+.h530{
+    height: 530px;
+}
+
+.ourServiceText{
+    font-size: 60px;
+    font-weight: 100;
+    background: linear-gradient(to right, #2476b5 0%, #949ca1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trendText{    
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 8%;
+}
+
+.f22{
+    font-size: 22px;
+}
+
+.viewAllBtn{
+    width: 220px;
+    color: #174f7e;
+    background: #fff;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.trendSlider{
+    width: 100%;
+}
+
+.trendSlider p{    
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.sliderBtn{
+    position: absolute;
+    top: 49%;
+    left: 32%;
+    width: 40%;
+}
+
+.form-control{
+    border-radius: 4px !important;
+    border: 3px solid #5B5B5A !important;
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.backWhite{
+    background: #fff;
+}
+
+.btnSubmit{
+    background: #0072a9;
+    color: #fff;
+    width: 110px;
+    border: 0;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.textContactUs{
+    font-size: 38px;
+    font-weight: 700;
+    color: #5b5b5a;
+    margin-bottom: 0;
+}
+
+.textHelpYou{
+    color: #5b5b5a;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.leftContactUsText{
+    color: #fff;
+    font-size: 35px;
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+
+.copyrightRow{
+    background: #174d7c;
+    color: #9aacc0;
+    padding-left: 50px !important;
+    margin-top: 30px !important;
+    line-height: 80px;
+}
+
+.bitCoin3dImage{
+    padding-bottom: 20%;
+    padding-bottom: 20%;
+}
+
+.lh-1{
+    line-height: 1;
+}
+
+.pt10P{
+    padding-top: 10%;
+}
+
+.swiper-slide{
+    text-align: center;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    background: #3a8ac8;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sidebar>ul{
+    list-style-type: none;
+    padding: 0
+}
+
+.sidebar>ul>li{
+    padding: 10px 20px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sidebar>ul>li.active{    
+    background: white;
+    color: #3a8ac8;
+}
+
+.sideHide{
+    transform: translateX(280px);
+    transition: 1s all;
+}
+
+.sideShow{
+    transform: translateX(0);
+    transition: 1s all;
+}
+
+.servicesSideTitle {
+    list-style-type: none;
+    padding-left: 14px;
+}
+
+.servicesSideTitle>li{
+    font-size: 13px;
+    font-weight: 400;
+    border-top: 1px solid;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.serviceDropdown{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    right: 0;
+    top: 44px;
+    background: #3386c6;
+    list-style-type: none;
+    color: #fff;
+    padding: 0px;
+    transform: translateY(-150%);
+}
+
+.serviceDropdown>li{
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+
+.serviceDropdown>li:hover{
+    background: #61bff2;
+}
+
+.dropdownHide{
+    transform: translateY(-150%);
+    transition: 1s all;
+}
+
+.dropdownShow{
+    transform: translateY(0);
+    transition: 1s all;
+}
+
+.servicesMainPage>div{
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.servicesMainPage>div:hover{
+    transform: scale(1.4);
+    transition: 1s all;
+}
+
+.fa{
+    cursor: pointer;
+}
+
+.viewAllBtn:hover{
+    color: #fff;
+    background: #174f7e;
+
+}
+
+.btn:focus{ 
+    box-shadow: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.fa-facebook-square:hover{
+    color: #3f51b5;
+    background: #fff;
+}
+
+.fa-twitter-square:hover{
+    color: #1da1f2;
+    background: #fff;
+}
+
+.fa-google-plus-square:hover{
+    color: #df554a;
+    background: #fff;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+}
+
+.myModal{
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    width: 40%;
+    background: #fff;
+}
+
+.myModal>h4{
+    background: #6da8d6;
+    color: #fff;
+    padding: 12px;
+}
+
+.modalHide{
+    transform: translateY(100%);
+    transition: 1s all;
+}
+
+.modalShow{
+    transform: translateY(0%);
+    transition: 1s all;
+}
+.alert{
+    position: fixed;
+    top: 15px;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0;
+    z-index: 10;
+}
+
+.alertHide{
+    transform: translateY(-200px);
+    transition: all 1s;
+}
+
+.alertShow{
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+.btnSubmit{
+    cursor: pointer;
+}
+
+.btnSubmit:disabled{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+@media screen and (max-width:1100px){
+    .lorem{
+        font-size: 60px;
+    }
+    .ipsum{
+        font-size: 80px;
+    }
+    .leftContactUsText{
+        font-size: 31px;
+    }
+}
+@media screen and (max-width:990.5px){
+    .nav>li>a{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    .lorem{
+        font-size: 47px;
+    }
+    .ipsum{
+        font-size: 65px;
+    }
+    .trendBackground{
+        background-repeat: no-repeat;
+        height: 550px;
+    }    
+    .leftContactUsText{
+        font-size: 23px;
+    }
+    .myModal{
+        left: 25%;
+        width: 50%;
+    }
+}
+@media screen and (max-width:767.5px){
+    .lorem{
+        font-size: 35px;
+    }
+    .ipsum{
+        font-size: 53px;
+    }
+    .bigB{
+        width: 77px;
+    }
+    .smallB{
+        width: 60px;
+        left: 107px;
+    }
+    .trendText{
+        font-size: 40px;
+        margin-top: 12%;
+    }
+    .leftContactUsText{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mdMargin{
+        margin-top: 25px;
+    }
+
+    .contactUsBackground{
+        background-size: 100% auto;
+        background-repeat: round;
+    }
+
+    .copyrightRow{
+        line-height: 30px;
+    }
+    .myModal{
+        left: 20%;
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:599.5px){
+    .lorem{
+        font-size: 28px;
+    }
+    .ipsum{
+        font-size: 38px;
+    }
+    .bigB{
+        width: 52px;
+    }
+    .smallB{
+        width: 40px;
+        left: 90px;
+    }
+    .trendText{
+        font-size: 35px;
+        margin-top: 17%;
+    }
+    .copyrightRow{
+        font-size: 13px;
+    }
+    .myModal{
+        left: 10%;
+        width: 80%;
+    }
+}
+@media screen and (max-width:449.5px){
+    .lorem{
+        font-size: 16px;
+    }
+    .ipsum{
+        font-size: 24px;
+    }
+    .bigB{
+        width: 52px;
+    }
+    .smallB{
+        width: 40px;
+        left: 90px;
+    }
+    .bitCoin3dImage{
+        padding-bottom: 25%;
+    }
+    .ourServiceText{
+        font-size: 50px;
+    }
+    .trendText{
+        font-size: 30px;
+        margin-top: 24%;
+    }
+    .copyrightRow{
+        font-size: 9px;
+    }
+    .myModal{
+        left: 1%;
+        width: 98%;
+    }
+}
+ @media screen and (max-width:353.5px){
+     .mdMargin{
+        margin-top: 0;
+    }
+ }

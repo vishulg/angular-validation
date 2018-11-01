@@ -1,0 +1,236 @@
+<div class="container-fluid">
+  <div class="row headBackground">
+    <div class="row justify-content-center w-100">
+        <div class="col-11">
+          <div class="row header">
+            <div class="col-md-2 col-8">
+              <img src="./assets/icons/oodlesLogo.png" width="115">
+            </div>
+            <div class="col-md-10 align-self-center d-md-block d-none">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">TECHNOLOGIES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">MARKEING INSIGHT</a>
+                </li>
+                <li class="nav-item position-relative">
+                  <a class="nav-link">SERVICES 
+                    <i class="fa fa-chevron-down p-1" *ngIf = "!isDropdown" (click)="isDropdown = !isDropdown"></i>
+                    <i class="fa fa-chevron-up p-1" *ngIf = "isDropdown" (click)="isDropdown = !isDropdown"></i>
+                  </a>
+                  
+                  <ul class="serviceDropdown dropdownHide" [ngClass]="{dropdownShow : isDropdown}">
+                    <li>
+                      <img src="./assets/icons/service1.png" width="30" />&nbsp;&nbsp;Smart Contract Development</li>
+                    <li>
+                      <img src="./assets/icons/service2.png" width="30" />&nbsp;&nbsp;Exchanges</li>
+                    <li>
+                      <img src="./assets/icons/service3.png" width="30" />&nbsp;&nbsp;Blockchain Development</li>
+                    <li>
+                      <img src="./assets/icons/service4.png" width="30" />&nbsp;&nbsp;Hyperledger</li>
+                    <li>
+                      <img src="./assets/icons/service5.png" width="30" />&nbsp;&nbsp;Private Blockchain Development</li>
+                    <li>
+                      <img src="./assets/icons/service6.png" width="30" />&nbsp;&nbsp;Wallet</li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">ABOUT US</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 text-right d-md-none align-self-center">
+              <i class="fa fa-bars fa-lg pr-2"  (click)="openSidebar()"></i>
+            </div>
+          </div>
+        </div>      
+    </div>
+    <div class="row w-100 h-auto position-relative">
+      <div class="col-6 pt10P lh-1">
+        <p class="lorem">LOREM</p>
+        <p class="ipsum">IPSUM</p>
+      </div>
+      <div class="col-6">
+        <img src="./assets/backgrounds/bitcoin_3d_logo.png" class="bitCoin3dImage" width="100%" />
+      </div>
+      <img src="./assets/icons/feature-bitcoin.png" class="smallB" />
+      <img src="./assets/icons/feature-bitcoin.png" class="bigB" />
+    </div>
+    
+    
+  </div>
+  <div class="row justify-content-center">
+    <p class="ourServiceText">OUR SERVICES</p>
+  </div>
+  <div class="row servicesMainPage">
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <img src="./assets/icons/Layer3.png" />
+      <p class="f22">SMART CONTRACTS <br /> DEVELOPMENT</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <img src="./assets/icons/Layer4.png" />
+      <p class="f22">EXCHANGES</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <img src="./assets/icons/Layer5.png" />
+      <p class="f22">BLOCKCHAIN
+        <br /> DEVELOPMENT</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <img src="./assets/icons/Network-512.png" />
+      <p class="f22">HYPERLEDGER</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <img src="./assets/icons/if_Dzone_669685.png" />
+      <p class="f22">PRIVATE BLOCKCHAIN
+        <br /> DEVELOPMENT</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <img src="./assets/icons/Layer6.png" />
+      <p class="f22">WALLET</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-sm-6 col-12 text-center">
+      <button class="btn viewAllBtn" (click)="isModal=true">View All Services</button>
+    </div>
+  </div>
+  <div class="row trendBackground justify-content-center">
+    <div class="col-12 text-center">
+      <p class="trendText">TREND</p>
+    </div>
+    <div class="row trendSlider">
+      <div class="swiper-container col-12 align-self-center pb-4 " [swiper]="config2" [(index)]="index4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>How Blockchain Technology
+              <br /> Will Fortify
+              <br /> Real Estate Industry</p>
+            <img src="./assets/sliders/Real-Estate-Investment-Dropping.png" width="75%" class="position-relative" />
+            <button class="btn viewAllBtn sliderBtn" (click)="scrollTop()">View All</button>
+          </div>
+          <div class="swiper-slide">
+            <p>Blockchain Technology
+              <br /> Can Help
+              <br /> Fight Cyber Crimes</p>
+            <img src="./assets/sliders/cybercrime2.png" width="75%" class="position-relative" />
+            <button class="btn viewAllBtn sliderBtn" (click)="scrollTop()">View All</button>
+          </div>
+          <div class="swiper-slide">
+            <p>Blockchain Technology
+              <br /> Contributing To
+              <br /> Research & Development</p>
+            <img src="./assets/sliders/businessman-business-sketch.png" width="75%" class="position-relative" />
+            <button class="btn viewAllBtn sliderBtn" (click)="scrollTop()">View All</button>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row contactUsBackground">
+    <div class="col-md-6 col-12 align-self-center mdMargin">
+      <p class="leftContactUsText">New to the Blockchain industry?</p>
+      <p class="leftContactUsText">Or got any queries?</p>
+      <p class="leftContactUsText">We are just one click away!</p>
+    </div>
+    <div class="col-md-6 col-12 text-center my-5">
+      <form class="col-lg-8 col-md-10 col-12 m-auto backWhite"  [formGroup]="contactUsForm">
+        <div class="col-12 pt-4">
+          <p class="textContactUs">Contact Us</p>
+          <p class="textHelpYou">How can we help you?</p>
+        </div>
+        <div class="col-12 mt-2">
+          <input type="text" placeholder="Your Name" formControlName="name" class="form-control">
+          <span class="text-danger" *ngIf="name.errors?.required && name.touched"> Please Enter a Name</span>
+          <span class="text-danger" *ngIf="!name.errors?.pattern && name.errors?.minlength && name.touched"> Minimum 3 characters required</span>
+          <span class="text-danger" *ngIf="!name.errors?.pattern &&name.errors?.maxlength && name.touched"> Maximum 32 characters allowed</span>
+          <span class="text-danger" *ngIf="name.errors?.pattern && name.touched"> Only Alphabats are allowed</span>
+        </div>
+        <div class="col-12 mt-2">
+          <input type="text" placeholder="Your email address" formControlName="email" class="form-control">
+          <span class="text-danger" *ngIf="email.errors?.required && email.touched"> Please Enter an Email</span>
+          <span class="text-danger" *ngIf="!email.errors?.required && email.errors?.EmailValidity && email.touched"> Please Enter Valid Email</span>
+        </div>
+        <div class="col-12 mt-2">
+          <input type="text" placeholder="Company" formControlName="company" class="form-control">
+          <span class="text-danger"  *ngIf="company.errors?.required && company.touched"> Please Enter a Company</span>
+          <span class="text-danger"  *ngIf="company.errors?.pattern && company.touched"> Please Enter Valid Company</span>
+        </div>
+        <div class="col-12 mt-2">
+          <input type="text" placeholder="Your Subject" formControlName="subject" class="form-control">
+          <span class="text-danger"  *ngIf="subject.errors?.required && subject.touched"> Please Enter a Subject</span>
+          <span class="text-danger"  *ngIf="!subject.errors?.required && subject.errors?.maxlength && subject.touched"> Maximum 15 characters allowed</span>
+        </div>
+        <div class="col-12 mt-2">
+          <textarea type="text" placeholder="Your Message..." formControlName="message" rows="2" class="form-control"></textarea>
+          <span class="text-danger" *ngIf="message.errors?.required && message.touched"> Please Enter a Message</span>
+          <span class="text-danger" *ngIf="message.errors?.minlength && message.touched"> Minimum 30 characters required</span>
+          <span class="text-danger" *ngIf="message.errors?.maxlength && message.touched"> Maximum 150 characters allowed</span>
+        </div>
+        <div class="col-12 mt-2">
+          <button class="submit btnSubmit" [disabled]="contactUsForm.invalid" (click)="submit(contactUsForm.value)">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row copyrightRow">
+    <div class="col-md-8 col-12">
+      <p class="mb-0">Copyright 2009-2017 OodlesTechnologies. All Rights Reserved.</p>
+    </div>
+    <div class="col-md-4 col-12 text-md-right">
+      <i class="fa fa-lg mr-2 fa-facebook-square"></i>
+      <i class="fa fa-lg mr-2 fa-twitter-square"></i>
+      <i class="fa fa-lg mr-2 fa-google-plus-square"></i>
+    </div>
+    
+  </div>
+</div>
+<div class="sidebar sideHide" [ngClass]="{sideShow:isShow}">
+  <ul>
+    <li class="text-right" (click)="closeSidebar()">X</li>
+    <li class="active">HOME</li>
+    <li>PORTFOLIO</li>
+    <li>TECHNOLOGIES</li>
+    <li>MARKETING INSIGHT</li>
+    <li>SERVICES
+      <i class="fa fa-chevron-down float-right" *ngIf = "!sidebarService" (click)="sidebarService = !sidebarService"></i>
+      <i class="fa fa-chevron-up float-right" *ngIf = "sidebarService" (click)="sidebarService = !sidebarService"></i>
+      <ul class="servicesSideTitle" *ngIf = "sidebarService">
+        <li><img src="./assets/icons/service1.png" width="30" />&nbsp;&nbsp;Smart Contract Development</li>
+        <li><img src="./assets/icons/service2.png" width="30" />&nbsp;&nbsp;Exchanges</li>
+        <li><img src="./assets/icons/service3.png" width="30" />&nbsp;&nbsp;Blockchain Development</li>
+        <li><img src="./assets/icons/service4.png" width="30" />&nbsp;&nbsp;Hyperledger</li>
+        <li><img src="./assets/icons/service5.png" width="30" />&nbsp;&nbsp;Private Blockchain Development</li>
+        <li><img src="./assets/icons/service6.png" width="30" />&nbsp;&nbsp;Wallet</li>
+      </ul>
+    </li>
+    <li>ABOUT US</li>
+  </ul>
+</div>
+
+<div class="overlay modalHide" [ngClass]="{modalShow:isModal}"> 
+  <div class="myModal">
+    <h4 class="text-center">OUR SERVICES <i (click)="isModal = false" class="fa fa-times float-right"></i></h4>
+    <ul style="list-style-type: square">
+      <li><img width="30" class="mr-2 py-2" src="./assets/icons/Layer3.png" />SMART CONTRACTS DEVELOPMENT</li>
+      <li><img width="30" class="mr-2 py-2" src="./assets/icons/Layer4.png" />EXCHANGES</li>
+      <li><img width="30" class="mr-2 py-2" src="./assets/icons/Layer5.png" />BLOCKCHAIN DEVELOPMENT</li>
+      <li><img width="30" class="mr-2 py-2" src="./assets/icons/Network-512.png" />HYPERLEDGER</li>
+      <li><img width="30" class="mr-2 py-2" src="./assets/icons/if_Dzone_669685.png" />PRIVATE BLOCKCHAIN DEVELOPMENT</li>
+      <li><img width="30" class="mr-2 py-2" src="./assets/icons/Layer6.png" />WALLET</li>
+    </ul>
+  </div>
+</div>
+
+<div class="myModal alert alertHide" [ngClass]="{alertShow:isAlert}">Contact form has been submitted successfully</div>
